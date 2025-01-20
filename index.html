@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRC School of Audit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navBar-container">
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>        
+        </div>
+
+        <img src="./images/rrc_academy_of_audit-removebg-preview.png" alt="Logo">
+
+        <div class="navBar">
+            <div class="navBar-sub">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#courses">Our Courses</a></p>
+            </div>
+
+            <div>
+                <button class="Enquire-btn">Enquire Now</button>
+
+            </div>
+
+        </div>
+    </nav>
+
+        <!-- Side navbar -->
+        <div class="side-navbar">
+            <p style="text-align: right;" onclick="classNavbar()">
+                <i class="fa-solid fa-xmark" style="cursor: pointer;"></i>
+            </p>
+
+            <div class="side-navbar-links">
+                <p class="side-navbar-link"><a href="index.html" >Home</a></p>
+                <p class="side-navbar-link"><a href="#new-arrivals" >About Us</a></p>
+                <p class="side-navbar-link"><a href="#courses" >Our Courses</a></p>
+                <p class="side-navbar-link"><a href="collection.html" >Enquire Now</a></p>
+            </div>
+
+        </div>
+
+    <!-- banner -->
+    <div class="header">
+        <div class="header-bg">
+            <img src="./images/banner-img.jpeg" alt="Banner Image">
+        </div>
+        <div class="header-sub">
+            <h1 class="header-sub_heading">
+                Welcome to <br>
+                <span class="typewriter">RRC Academy of Audit</span>
+            </h1>
+            <p>
+                <span class="typewriter-second">Your Gateway to Excellence in </span>
+                <span id="dynamic-text"></span><br>
+                Coaching in Thanjavur
+            </p>
+            <button class="learn-btn">Start Learning</button>
+        </div>
+
+        <div class="banner"> 
+            <div class="banner-orange">
+                <img class="orange-shape" src="./images/vector.svg" alt="Orange Shape">
+            </div> 
+            <div class="banner-girl-container"> 
+                <img class="banner-girl" src="./images/banner-women.png" alt="Person holding a book" class="person"> 
+            </div>
+            <div class="text-content"> 
+                <div class="enrolled">500+ Enrolled</div>
+                <div class="review-container">
+                    <div class="review">
+                        <span class="star">⭐</span>
+                        <span>4.5 Google <br> Review</span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about-container" id="about">
+        <div class="about-heading">
+            <h1>About Us</h1>
+        </div>
+
+        <div class="about">
+            <div class="about-image">
+                <img src="./images/Group 19.svg" alt="">
+            </div>
+
+            <div class="about-content">
+                <p>
+                    At RRC Academy of Audit, we are committed
+                    to guiding students toward success with a
+                    student-centric approach,
+                    experienced
+                    faculty, and hands-on learning techniques.
+                    With a proven track record in producing
+                    successful professionals, we aim to empower
+                    students to achieve their dreams.
+                </p>
+                <button class="Enquire-btn" id="learn-btn">Learn more</button>
+            </div>
+        </div>       
+    </div>
+
+    <!-- Achievements -->
+    <div class="achivement">
+        <img src="./images/ach.jpg" alt="">
+        <div class="achivement-content">
+            <div class="achivement-content_sub">
+                <img src="./images/Frame 1218.png" alt="">
+                <p class="achivement-content_sub-head">500+</p>
+                <span class="achivement-content_sub-p">Students Enrolled</span>
+            </div>
+            <div class="achivement-content_sub">
+                <img src="./images/Frame 1218 (1).png" alt="">
+                <p class="achivement-content_sub-head">20+</p>
+                <span class="achivement-content_sub-p">Achievers</span>
+            </div>
+            <div class="achivement-content_sub">
+                <img src="./images/Frame 1218 (2).png" alt="">
+                <p class="achivement-content_sub-head">20+</p>
+                <span class="achivement-content_sub-p">Faculties</span>
+            </div>
+            <div class="achivement-content_sub">
+                <img src="./images/Frame 1218 (3).png" alt="">
+                <p class="achivement-content_sub-head">15+</p>
+                <span class="achivement-content_sub-p">Courses</span>
+            </div>
+        </div>
+    </div>
+
+
+            <!-- Our Courses Section  -->
+            <section class="Course-section" id="courses">
+                <h1 >Our Courses</h1>
+
+                <div class="card-container">
+
+                <div class="card">
+                    <img
+                    class="card-img-top"
+                    src="./images/CA-logo.jpeg"
+                    alt="CA-img"
+                    />
+                    <div class="card-content">
+                    <h4 class="card-title">CA (Chartered Accountancy)</h4>
+                    <div class="card-text">
+                        <span>
+                            comprehensive training for
+                            Foundation, Intermediate, and
+                            Final levels.
+                        </span>
+                    </div>
+                    <a
+                        class="btn-course-section"
+                        href="./CA-foundational.html"
+                        >Know More</a
+                    >
+                    </div>
+                </div>
+                <div class="card">
+                    <img
+                    class="card-img-top"
+                    src="./images/CA-int-logo.jpg"
+                    alt="CA-img"
+                    />
+                    <div class="card-content">
+                    <h4 class="card-title">CMA (Cost & Management Accounting)</h4>
+                    <div class="card-text">
+                        <span >
+                            Personalized coaching for
+                            Foundation, Intermediate, and
+                            Final levels.
+                        </span>
+                    </div>
+                    
+                    <a
+                        class="btn-course-section"
+                        href="./CA-intermediate.html"
+                        >Know More</a
+                    >
+                    </div>
+                </div>
+                <div class="card">
+                    <img
+                    class="card-img-top"
+                    src="./images/CMA-logo.jpeg"
+                    alt="CA-img"
+                    />
+                    <div class="card-content">
+                    <h4 class="card-title">CS (company secretary)</h4>
+                    <div class="card-text">
+                        <span>
+                            Focused preparation for Executive
+                            & Professional levels to excel in
+                            corporate governance roles.
+                        </span>
+                    </div>
+                    <a
+                        class="btn-course-section"
+                        href="./CMA-foundational.html"
+                        >Know More</a
+                    >
+                    </div>
+                </div>
+                <div class="card">
+                    <img
+                    class="card-img-top"
+                    src="./images/CMA-int-logo.jpg"
+                    alt="CMA-img"
+                    />
+                    <div class="card-content">
+                    <h4 class="card-title">Tally Prime Certification</h4>
+                    <div class="card-text">
+                        <span>
+                            Gain in—depth knowledge Of Tally,
+                            from the basics to advanced
+                            training.
+                        </span>
+                    </div>
+                    <a
+                        class="btn-course-section"
+                        href="./CMA-intermediate.html"
+                        >Know More</a
+                    >
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!-- testimonials -->
+
+            <div class="testimonials-container">
+                <h1 class="testimonials-heading">Hear Out From Our Students</h1>
+                <div class="testimonials-slider">
+                <div class= "testimonials">
+
+                    <div class="testimonials-card">
+                        <div class="l-shaped-box">
+                            <span class="quote-symbol">”</span>
+                            <p>RRC academy is a good place for learning and I did my internship in RRC academy. 
+                                All the staff are friendly to us, and I learned Tally Prime in RRC CA-CMA under Prakash Sir. 
+                                He was a good mentor.</p>
+                                <img src="./images/Frame 1243.svg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials-card">
+                        <div class="l-shaped-box">
+                            <span class="quote-symbol">”</span>
+                            <p>One Of the Finest Institute for CA in
+                                Thanjavur. Faculty is very good and
+                                supportive. They plan and motivate students
+                                in such a way that the students are
+                                confident about their goals and try their best
+                                to achieve it.</p>
+                                <img src="./images/Frame 1238 (1).svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="testimonials-card">
+                        <div class="l-shaped-box">
+                            <span class="quote-symbol">”</span>
+                            <p>I finished tally here and studying CA
+                                foundation. Classes are offered by
+                                experienced faculties with interactive
+                                sessions which is very easy to understand.</p>
+                                <img src="./images/Frame 1238.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="testimonials-card">
+                        <div class="l-shaped-box">
+                            <span class="quote-symbol">”</span>
+                            <p>RRC Academy is One Of the Best coaching
+                                institute in Thanjavur. well experienced
+                                faculties and suitable study environment.
+                                We are learned more about Tally and
+                                vouchers posting.</p>
+                                <img src="./images/Frame 1243 (2).svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="testimonials-card">
+                        <div class="l-shaped-box">
+                            <span class="quote-symbol">”</span>
+                            <p>I attended CA/CMA seminar conducted by
+                                rrc academy. The faculties were very
+                                experienced as well as friendly. I had a great
+                                learning experience here and my sincere
+                                thanks to the management and prakash sir.</p>
+                                <img src="./images/Frame 1243.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+            <!-- Footer -->
+
+            <div class="footer-container">
+                <div class="footer-links">
+                    <div class="footer-logo">
+                        <img src="./images/calogo.png" alt="RRC Academy Logo">
+                    </div>
+                    <div class="footer-links-sub">
+                        <h4>Services</h4>
+                        <p><a href="#about">About</a></p>
+                        <p><a href="#courses">Our Courses</a></p>
+                        <p><a href="">Contact</a></p>
+                    </div>
+                </div>
+            
+                <div class="footer-contact">
+                    <h4>Contact us</h4>
+                    <div class="footer-contact_sub">
+                        <div>
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div>
+                            <p>+91 8015 6969 70</p>
+                            <p>+91 8015 8045 80</p>
+                        </div>
+                    </div>
+            
+                    <div class="footer-contact_sub-email">
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p>rrcacademyofaudit@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="footer-f-address">
+                    <!-- location icon -->
+                    <div class="footer-f-address-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>No.2862, Deen Complex,</p>
+                        <p>Mary's Corner, Parisutham Nagar,</p>
+                        <p>Thanjavur, Tamil Nadu 613001</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-container_social">
+                
+                <div class="footer-container_social-sub">
+                    <p>Follow us</p>
+                    <a href="https://www.instagram.com/rrc_academy_of_audit/" target="_blank">
+                        <img src="./images/Instagram.svg" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="https://www.facebook.com/p/RRC-Auditing-Academy-100094229119938/" target="_blank">
+                        <img src="./images/Facebook.svg" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://in.linkedin.com/company/rrc-academy" target="_blank">
+                        <img src="./images/LinkedIn.svg" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC-IkSH3x8JLGMqjMVfR_j4Q" target="_blank">
+                        <img src="./images/Youtube.svg" alt="YouTube" class="social-icon">
+                    </a>
+                    <a href="https://wa.me/918015696970" target="_blank">
+                        <img src="./images/Whatsapp.svg" alt="WhatsApp" class="social-icon">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-container_social-sub_copyright">
+                <span>Copyright &copy; 2024 RRC Academy. All rights reserved.</span>
+            </div>
+
+            <script src="anim.js"></script>
+        </body>
+</html>

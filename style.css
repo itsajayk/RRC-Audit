@@ -107,7 +107,7 @@
         flex-wrap: wrap;
     }
 
-    .learn-btn{
+    .start-learn_btn{
         padding: 12px 8px;
         border: solid 2px transparent;
         border-radius: 15px;
@@ -119,7 +119,7 @@
         
     }
 
-    .learn-btn:hover{
+    .start-learn_btn:hover{
         background-color: transparent;
         color: #ff950f;
         border-color: #ff950f;
@@ -707,7 +707,7 @@
         display: none;
     }
 
-    #learn-btn{
+    #start-learn_btn-btn{
         display: block ;
         padding: 8px;
         font-size: small;
@@ -799,7 +799,7 @@
         font-size: small;
     }
     
-    .learn-btn{
+    .start-learn_btn-btn{
         padding: 8px 6px;
     }
     .navBar-container {
@@ -818,7 +818,7 @@
         display: none;
     }
 
-    #learn-btn{
+    #start-learn_btn-btn{
         display: block ;
         padding: 8px;
         font-size: small;

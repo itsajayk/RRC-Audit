@@ -28,7 +28,7 @@
     }
 
     .navBar-container img {
-        max-width: 20%;
+        max-width: 45vh;
         height: auto;
     }
 
@@ -810,7 +810,7 @@
     }
 
     .navBar-container img{
-        max-width: 30vh;
+        max-width: 25vh;
         height: auto;
     }
 

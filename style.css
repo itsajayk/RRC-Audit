@@ -595,6 +595,7 @@
 
     .footer-links-sub a{
         color: #efe7e7b4;
+        text-decoration: none;
     }
 
     .footer-links-sub a:hover{

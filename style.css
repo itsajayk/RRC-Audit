@@ -477,6 +477,10 @@
         transition: 1s;
     }
 
+    .btn-course-section a{
+        text-decoration: none;
+    }
+
     .testimonials-container{
         position: relative;
         overflow: hidden;

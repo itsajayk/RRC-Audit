@@ -24,7 +24,7 @@
         position: sticky;
         top: 0;
         background-color: #f8f5f5;
-        z-index: 5;
+        z-index: 7;
     }
 
     .navBar-container img {
@@ -815,9 +815,12 @@
     }
 
     body, html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
         overflow-x: hidden; /* Prevent horizontal scrolling */
-        margin: 0; /* Remove default margins */
-        padding: 0; /* Remove default padding */
     }
 
     .about-content {

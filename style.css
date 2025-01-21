@@ -802,9 +802,24 @@
         padding: 10px;
     }
 
+    body::-webkit-scrollbar {
+        display: none; 
+    }
+
 }
 
 @media screen and (max-width: 768px) {
+
+    body::-webkit-scrollbar {
+        display: none; 
+    }
+
+    body, html {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        margin: 0; /* Remove default margins */
+        padding: 0; /* Remove default padding */
+    }
+
     .about-content {
         flex: 1 1 100%;
     }
@@ -888,6 +903,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden; /* Prevent internal overflow */
     }
 
     .achivement img {
@@ -930,6 +946,16 @@
         font-size: medium;
     }
 
+    .Course-section {
+        padding: 10px 0 30px 0;
+        ;
+    }
+
+    .testimonials{
+        margin-bottom: 0;
+        height: 47vh;
+    }
+
     .testimonials-container{
         font-size: 10px;
     }
@@ -937,7 +963,7 @@
     .l-shaped-box {
         position: relative;
         width: 200px;
-        height: 65%;
+        height: 62%;
     }
     
     .l-shaped-box::after {

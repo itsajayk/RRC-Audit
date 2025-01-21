@@ -433,6 +433,11 @@
         text-align: center;
     }
 
+    .btn-course-section:hover{
+        background-color: #ff7b00;
+        transition: 1s;
+    }
+
     .testimonials-container{
         position: relative;
         overflow: hidden;
@@ -448,8 +453,8 @@
         font-family: Arial, sans-serif;
         display: flex;
         justify-content: center;
-        align-items: center;
         height: 40vh;
+        align-items: center;
         margin-bottom: 10em;
         background-color: #f5f5f5;
         padding: 20px;
@@ -707,13 +712,6 @@
         display: none;
     }
 
-    #start-learn_btn-btn{
-        display: block ;
-        padding: 8px;
-        font-size: small;
-        align-self: center;
-    }
-
     .about-heading h1{
         font-size: medium;
     }
@@ -795,13 +793,15 @@
     }
 
     .Enquire-btn {
-        padding: 5px;
+        padding: 7px;
         font-size: small;
+        align-self: center;
     }
     
-    .start-learn_btn-btn{
+    .start-learn_btn{
         padding: 8px 6px;
     }
+    
     .navBar-container {
         justify-content: space-between;
         position: sticky;
@@ -816,13 +816,6 @@
 
     .about-image img{
         display: none;
-    }
-
-    #start-learn_btn-btn{
-        display: block ;
-        padding: 8px;
-        font-size: small;
-        align-self: center;
     }
 
     .about-heading h1{
@@ -877,16 +870,37 @@
     }
 
     .footer-logo img{
-        width: 15vh;
+        width: 12vh;
     }
 
     .footer-container{
         font-size: 13px;
         padding: 20px 50px;
+        text-align: center;
+    }
+
+    .footer-f-address h4, .footer-contact h4, .footer-links-sub h4{
+        text-align: center;
+    }
+
+    .footer-contact_sub{
+        justify-content: center;
     }
 
     .footer-links{
         display: inline;
+    }
+
+    .footer-container_social-sub{
+        font-size: medium;
+    }
+
+    .footer-container_social-sub img{
+        width: 2em;
+    }
+
+    .footer-container_social-sub_copyright{
+        font-size: small;
     }
 
 }

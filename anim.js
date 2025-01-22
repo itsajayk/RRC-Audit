@@ -19,19 +19,20 @@ function updateText() {
 
   setTimeout(() => {
     textElement.textContent = words[index]; // Update the text
-    index = (index + 1) % words.length; // Cycle through the words
+    index = (index + 1) % words.length;
 
     textElement.classList.remove("animate__flipOutX");
     textElement.classList.add("animate__flipInX");
 
     setTimeout(() => {
       textElement.classList.remove("animate__flipInX");
-    }, 1000); // Reset after flipInX animation
-  }, 1000); // Duration of flipOutX animation
+    }, 1000); // Reset after flip-in
+  }, 1000); // Flip-out duration
 }
 
 setInterval(updateText, 3000); // Change text every 3 seconds
-updateText(); // Initialize first word
+updateText();
+
 
 
 setTimeout(() => {

@@ -143,10 +143,13 @@
         perspective: 2000px; /* Increase perspective for 3D effect */
         transform-style: preserve-3d;
         line-height: 1;
-        width: max-content;
+        backface-visibility: hidden;
+        margin: 0 auto;
+        text-transform: uppercase; /* Optional for uniformity */
+        position: relative; /* Prevent layout shifts */
     }
 
-        @keyframes flipZ {
+        /* @keyframes flipZ {
             0%, 100% {
             transform: rotateZ(0deg);
             }
@@ -159,7 +162,7 @@
             75% {
             transform: rotateZ(270deg);
             }
-        }
+        } */
     
     .typewriter {
         width: 0;
@@ -298,7 +301,6 @@
         background-color: #f8f5f5;
         z-index: 2;
         position: relative;
-        transition: 1s;
     }
 
     /* .about-container h1 {
@@ -877,7 +879,6 @@
         font-size: 15px;
         left: 0;
         right: 0;
-        /* padding: 20px; */
         text-align: center;
         top: 2em;
     }

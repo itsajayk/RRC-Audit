@@ -24,7 +24,7 @@
         position: sticky;
         top: 0;
         background-color: #f8f5f5;
-        z-index: 7;
+        z-index: 5;
     }
 
     .navBar-container img {
@@ -106,6 +106,7 @@
         font-size: 1.7vw;
         z-index: 4;
         flex-wrap: wrap;
+        text-wrap: wrap;
     }
 
     .start-learn_btn{
@@ -127,38 +128,47 @@
         transition: .5s ease-out;
     }
 
-    .typewriter, .typewriter-second {
+    .typewriter {
         display: inline-block;
         overflow: hidden;
         white-space: nowrap;
         border-right: 3px solid black;
         transition: 1s ease-out;
     }
+
+    #textElement {
+        display: inline-block;
+        font-weight: 600;
+        text-align: center;
+        perspective: 2000px; /* Increase perspective for 3D effect */
+        transform-style: preserve-3d;
+        line-height: 1;
+        width: max-content;
+    }
+
+        @keyframes flipZ {
+            0%, 100% {
+            transform: rotateZ(0deg);
+            }
+            25% {
+            transform: rotateZ(90deg);
+            }
+            50% {
+            transform: rotateZ(180deg);
+            }
+            75% {
+            transform: rotateZ(270deg);
+            }
+        }
     
     .typewriter {
         width: 0;
         animation: typing 2s steps(30, end) forwards, blink 0.7s step-end infinite;
     }
     
-    .typewriter-second {
-        width: 0;
-        visibility: hidden;
-        border-right: 3px solid black; /* Add border for typing */
-    }
     .header-sub p {
         line-height: 1; /* Set the line height for the paragraph to align text correctly */
     }
-    
-    #dynamic-text {
-        border-right: 3px solid #ff8c00;
-        display: inline-block;
-        vertical-align: top; /* Align with the top of the line-height */
-        line-height: 1; /* Match the line height of the paragraph */
-        color: #ff8c00;
-        font-weight: bold;
-    }
-    
-    
     
     @keyframes typing {
         from {
@@ -169,21 +179,17 @@
         }
     }
     
-    @keyframes typing-second {
-        from {
-            width: 0;
-        }
-        to {
-            width: 65%;
-        }
-    }
-    
     @keyframes blink {
         50% {
             border-color: transparent;
         }
     }
     
+
+    .stop-blink {
+        border-right: none; /* Disable blinking after typing */
+        transition: 1s;
+    }
 
     .orange-shape { 
         position: absolute; 
@@ -211,17 +217,19 @@
     }
 
     .enrolled {
-        width: 110px;  /* Set fixed width */
-        height: 110px; /* Set fixed height to match width */
+        width: 120px;  /* Set fixed width */
+        height: 120px; /* Set fixed height to match width */
         background-color: #0B5EB0;
         /* margin: 10px; */
         clip-path: circle(50%);
         text-align: center;
         color: white;
-        font-weight: bold;
+        font-weight: 500;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        text-wrap: wrap;
     }
 
 
@@ -232,7 +240,6 @@
         z-index: 3;
         left: auto;
         transform: translateX(-50%);
-
     }
 
     .circle{
@@ -253,8 +260,8 @@
 
     .circle{
         position: absolute;
-        top: 30em;
-        right: 5%;
+        top: 28em;
+        right: 10%;
         z-index: 3;
         left: auto;
     }
@@ -291,6 +298,7 @@
         background-color: #f8f5f5;
         z-index: 2;
         position: relative;
+        transition: 1s;
     }
 
     /* .about-container h1 {
@@ -728,9 +736,9 @@
         height: auto;
     } */
 
-    .banner{
+    /* .banner{
         display: none;
-    }
+    } */
 
     .navBar-container {
         justify-content: space-around;
@@ -738,9 +746,9 @@
         top: 0;
     }
 
-    .banner-girl {
+    /* .banner-girl {
         left: 5%;
-    }
+    } */
 
     .header-sub{
         font-size: 12px;
@@ -755,6 +763,7 @@
     .about-container{
         margin-top: 10em;
         padding: 10px;
+        transition: 1s;
     }
 
     .card {
@@ -832,29 +841,97 @@
         flex: 1 1 100%;
     }
 
-    .banner{
-        display: none;
+    .banner-orange img {
+        width: 35em;
+        height: auto;
+    }
+    
+    .orange-shape {
+        position: absolute;
+        top: 18em;
+        left: 14%;
+        right: 0;
+        z-index: 1;
     }
 
-    .header-sub{
-        font-size: 14px;
+    .banner-orange img{
+        width: 67%;
+    }
+
+    .banner-girl-container img {
+        width: 100vh;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .banner-girl {
+        position: absolute; 
+        top: 19em; 
+        right: 0;
         left: 0;
-        padding: 20px;
+        z-index: 2;
+    }
+
+
+    .header-sub{
+        font-size: 15px;
+        left: 0;
+        right: 0;
+        /* padding: 20px; */
+        text-align: center;
+        top: 2em;
+    }
+
+    .header-sub h1{
+        font-weight: 700;
+    }
+
+    .header-sub p{
+        width: 100%;
     }
 
     .header-bg img{
         width: 100%;
-        height: 40vh;
+        height: 100vh;
+        position: relative;
+        transform: rotate(180deg);
+    }
+
+    .enrolled{
+        width: 60px;
+        height: 60px;
+        font-size: 8px;
+        top: 45em;
+        left: 20%;
+    }
+
+    .enrolled img{
+        width: 3em;
+    }
+
+    .circle{
+        width: 40px;
+        height: 40px;
     }
 
     .about-container{
-        margin-top: 18em;
+        margin-top: -8em;
         padding: 30px;
+    }
+
+    .review-container {
+        font-size: 7px;
+        top: 46em;
+        left: 78%;
+        right: auto;
+    }
+
+    .review{
+        padding: 7px;
     }
 
     .card {
         flex: 1 1 100%;
-        /* flex-basis: 40%; */
         font-size: larger;
     }
 
@@ -898,11 +975,13 @@
     }
 
     .about-heading h1{
-        font-size: medium;
+        font-size: larger;
     }
 
     .about-content p{
         font-size: small;
+        text-align: center;
+        line-height: 2;
     }
 
     .achivement {
@@ -926,7 +1005,7 @@
     .achivement-content {
         position: static; /* Remove absolute positioning */
         margin-top: -5px; /* Adjust overlay position if needed */
-        padding: 1rem;
+        padding: 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -942,7 +1021,7 @@
     }
 
     .achivement-content_sub img {
-        width: 4rem;
+        width: 6rem;
     }
 
     .achivement-content_sub-head {
@@ -951,32 +1030,39 @@
 
     .achivement-content_sub-p {
         color: white;
-        font-size: medium;
+    }
+
+    .achivement-content_sub p{
+        font-size: x-large;
     }
 
     .Course-section {
         padding: 10px 0 30px 0;
-        ;
+        text-align: center;
+    }
+
+    .btn-course-section a{
+        text-decoration: none;
     }
 
     .testimonials{
         margin-bottom: 0;
-        height: 47vh;
+        height: 50vh;
     }
 
     .testimonials-container{
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .l-shaped-box {
         position: relative;
-        width: 200px;
-        height: 62%;
+        width: 220px;
+        height: 64%;
     }
     
     .l-shaped-box::after {
         bottom: -48px;
-        width: 70px;
+        width: 75px;
         height: 50px;
         background-color: #F9ECEC;
     }
@@ -986,7 +1072,7 @@
     }
 
     .testimonials-card img{
-        bottom: -4.8em; 
+        bottom: -3.5em; 
     }
 
     @keyframes slide {

@@ -10,43 +10,32 @@ function classNavbar(){
 
 // animation for header
 
-document.addEventListener('DOMContentLoaded', () => {
-    const typewriterSecond = document.querySelector('.typewriter-second');
-    const dynamicText = document.getElementById('dynamic-text');
-    const words = ['CA', 'CMA', 'CS'];
-    let wordIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
+const words = ["CA", "CMA", "CS"];
+let index = 0;
+const textElement = document.getElementById("textElement");
 
-    // Display second typing animation after first completes
+function updateText() {
+  textElement.classList.add("animate__flipOutX");
+
+  setTimeout(() => {
+    textElement.textContent = words[index]; // Update the text
+    index = (index + 1) % words.length; // Cycle through the words
+
+    textElement.classList.remove("animate__flipOutX");
+    textElement.classList.add("animate__flipInX");
+
     setTimeout(() => {
-        typewriterSecond.style.visibility = 'visible';
-        typewriterSecond.style.animation = 'typing-second 3s steps(25, end) forwards';
-        
-        // Stop blinking after typing-second completes
-        setTimeout(() => {
-            typewriterSecond.style.borderRight = 'none';
-            typeDynamicText();
-        }, 3000); // Matches typing-second duration
-    }, 2000); // Matches typing-first duration
+      textElement.classList.remove("animate__flipInX");
+    }, 1000); // Reset after flipInX animation
+  }, 1000); // Duration of flipOutX animation
+}
 
-    function typeDynamicText() {
-        const currentWord = words[wordIndex];
-        const typingSpeed = isDeleting ? 100 : 200;
+setInterval(updateText, 3000); // Change text every 3 seconds
+updateText(); // Initialize first word
 
-        if (!isDeleting && charIndex < currentWord.length) {
-            dynamicText.textContent += currentWord.charAt(charIndex);
-            charIndex++;
-        } else if (isDeleting && charIndex > 0) {
-            dynamicText.textContent = currentWord.substring(0, charIndex - 1);
-            charIndex--;
-        } else {
-            isDeleting = !isDeleting;
-            wordIndex = (wordIndex + 1) % words.length;
-            setTimeout(typeDynamicText, 1000);
-            return;
-        }
 
-        setTimeout(typeDynamicText, typingSpeed);
-    }
-});
+setTimeout(() => {
+    const typewriter = document.querySelector('.typewriter');  
+    typewriter.classList.add('stop-blink'); // Stop blinking cursor
+  }, 3000); // Adjust to match the duration of typing animations
+  

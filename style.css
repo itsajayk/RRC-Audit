@@ -393,7 +393,7 @@
         align-items: center;
         /* justify-content: center; */
         flex-direction: column;
-        line-height: .4;
+        line-height: 1;
     }
 
     .achivement-content_sub-head{

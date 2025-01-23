@@ -1075,19 +1075,19 @@
 
     .l-shaped-box {
         position: relative;
-        width: 220px;
-        height: 64%;
+        width: 250px;
+        height: 78%;
     }
     
     .l-shaped-box::after {
         bottom: -48px;
-        width: 75px;
-        height: 50px;
+        width: 87px;
+        height: 55px;
         background-color: #F9ECEC;
     }
 
     .l-shaped-box p {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .testimonials-card img{

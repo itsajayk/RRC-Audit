@@ -153,7 +153,6 @@
         position: relative; /* Prevent layout shifts */
         color: #ff7b00;
     }
-    
 
         /* @keyframes flipZ {
             0%, 100% {
@@ -479,7 +478,7 @@
         text-decoration: none;
     }
     
-    .btn-course-section {
+    .course-btn {
         background-color: #ff950f;
         padding: 5px 45px;
         border-radius: 20px;
@@ -488,12 +487,12 @@
         text-align: center;
     }
 
-    .btn-course-section:hover{
+    .course-btn:hover{
         background-color: #ff7b00;
         transition: 1s;
     }
 
-    .btn-course-section a{
+    .course-btn a{
         text-decoration: none;
     }
 
@@ -812,7 +811,7 @@
         width: 70%;
     }
 
-    .btn-course-section{
+    .course-btn{
         font-size: smaller;
         padding: 5px;
         border-radius: 20px;
@@ -1060,7 +1059,7 @@
         text-align: center;
     }
 
-    .btn-course-section a{
+    .course-btn a{
         text-decoration: none;
     }
 

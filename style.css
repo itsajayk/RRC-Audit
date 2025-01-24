@@ -83,6 +83,18 @@
         transition: .5s;
     }
 
+    .Enquire-btn a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .Enquire-btn a:hover {
+        background-color: transparent;
+        color: #ff950f;
+        border-color: #ff950f;
+        transition: .5s;
+    }
+
     .header {
         position: relative;
         z-index: 0;

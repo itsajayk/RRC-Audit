@@ -156,6 +156,10 @@ body::-webkit-scrollbar {
         text-align: center;
         margin-bottom: 30px;
     }
+
+    .single-team a{
+        text-decoration: none;
+    }
     
     /* Team image container */
     .team-thumb {

@@ -30,8 +30,9 @@ function updateText() {
   }, 1000); // Flip-out duration
 }
 
-setInterval(updateText, 3000); // Change text every 3 seconds
+setInterval(updateText, 2000); // Change text every 3 seconds
 updateText();
+
 
 
 
@@ -39,4 +40,7 @@ setTimeout(() => {
     const typewriter = document.querySelector('.typewriter');  
     typewriter.classList.add('stop-blink'); // Stop blinking cursor
   }, 3000); // Adjust to match the duration of typing animations
+  
+
+
   

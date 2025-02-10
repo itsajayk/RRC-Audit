@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes easeInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes easeInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.ease-in-top {
+    animation: easeInFromTop 2s ease-out forwards;
+}
+
+.ease-in-bottom {
+    animation: easeInFromBottom 2s ease-out forwards;
+}
+
+
+body {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8F8;
+    color: #1F1E1E;
+    text-transform: capitalize;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+.about-page-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    min-height: 110vh;
+    background-color: #FFF8F8; /* Fallback background */
+}
+
+.about-page-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/about-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: .4; /* Adjust opacity as needed */
+    z-index: -1; /* Places it behind the content */
+}
+
+
+.about-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+.about-image-container img{
+    width: 80%;
+}
+
+.about-image-container-mob{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image-container-mob img{
+    display: none;
+    width: 80%;
+}
+
+#about-content p{
+    font-size: larger;
+}
+
+/* .about-page-container img{
+    width: 100%;
+    min-height: fit-content;
+} */
+
+.about-page-container-sub{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.stand-out{
+    position: relative;
+}
+
+.stand-out img{
+    width: 100%;
+}
+
+.our-mission{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-mission img{
+    width: 80%;
+}
+
+
+/* Container for the team section */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .section-title h2{
+        text-align: center;
+        font-size: xx-large;
+    }
+    
+    /* Flex container to arrange team members in a row */
+    .team-flex {
+        display: flex;
+        flex-wrap: wrap;           /* Wrap to next line on smaller screens */
+        justify-content: center;   /* Center items horizontally */
+        gap: 20px;                 /* Space between team members */
+        padding: 20px 0;
+    }
+    
+    /* Individual team member styling */
+    .single-team {
+        flex: 1 1 250px;           /* Grow, shrink, and set a basis width */
+        max-width: 300px;          /* Optional: limit maximum width */
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    /* Team image container */
+    .team-thumb {
+        margin-bottom: 15px;
+    }
+    
+    /* Team member info styling */
+    .team-info h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .team-info h6 {
+        font-size: 16px;
+        margin: 3px 0;
+    }
+    
+    .team-info span {
+        font-size: 16px;
+        color: #fe8366;
+        font-weight: 600;
+    }
+    
+    .our-journey{
+        padding: 20px;
+        margin: 5px 50px;
+    }
+
+    .our-journey h1{
+        color: #012951;
+        text-align: center;
+    }
+
+    .our-journey p{
+        font-size: larger;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .our-journey_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .our-journey_card{
+        margin: 10px 0;
+        flex-grow: 1;
+        flex-basis: 22%; /* Adjust width for better alignment */
+        display: flex;
+        flex-direction: column; /* Maintains vertical structure inside cards */
+        align-items: center;
+        justify-content: space-between; /* Keeps space distributed between elements */
+        box-sizing: border-box;
+        width: max-content;
+    }
+
+    .our-journey_card a {
+        background: linear-gradient(90deg, rgba(255,140,0,1) 0%, rgba(255,196,40,0.916) 84%);
+        padding: 5px 15px;
+        border-radius: 10px;
+        margin-top: 12px;
+        color: black;
+        text-align: left;
+        text-decoration: none;
+        width: 80%;
+        display: block;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: large;
+    }
+    
+    .our-journey_card a:hover {
+        background: linear-gradient(90deg, rgba(255,196,40,1) 0%, rgba(255,140,0,1) 100%);
+    }
+    
+
+    .our-journey_card img{
+        height: 40%;
+        width: 80%;
+    }
+
+    @media screen and (max-width: 768px) {
+        .our-journey_card {
+            flex-basis: 75%;
+            }
+
+        .our-journey p{
+            font-size: 12px;
+        }
+
+        .our-journey{
+            margin: 2px 5px;
+        }
+
+        .about-page-container{
+            min-height: 75vh;
+        }
+
+        .about-image-container img{
+            display: none;
+        }
+
+        .about{
+            display: flex;
+            padding: 5px 25px;
+        }
+
+        .about-image-container-mob img{
+            display: block;
+        }
+
+        #about-content p{
+            font-size: small;
+        }
+
+    }

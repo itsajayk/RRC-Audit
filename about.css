@@ -157,10 +157,6 @@ body::-webkit-scrollbar {
         margin-bottom: 30px;
     }
 
-    .single-team a{
-        text-decoration: none;
-        color: black;
-    }
     
     /* Team image container */
     .team-thumb {
@@ -182,6 +178,10 @@ body::-webkit-scrollbar {
         font-size: 16px;
         color: #fe8366;
         font-weight: 600;
+    }
+    .team-info a{
+        text-decoration: none;
+        color: black;
     }
     
     .our-journey{

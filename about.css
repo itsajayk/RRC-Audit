@@ -159,6 +159,7 @@ body::-webkit-scrollbar {
 
     .single-team a{
         text-decoration: none;
+        color: black;
     }
     
     /* Team image container */
